@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lean Bulk</title>
+<meta name="description" content="Two-week rotating lean-bulk meal plan with recipes and tracking.">
+<meta name="theme-color" content="#0f766e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lean Bulk">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="top"><h1>Lean Bulk</h1><div id="sub"></div></header>
+<main id="app"></main>
+<nav id="tabs">
+  <button data-tab="today">Today</button>
+  <button data-tab="week">Week</button>
+  <button data-tab="prep">Prep</button>
+  <button data-tab="progress">Progress</button>
+  <button data-tab="checkin">Check-in</button>
+  <button data-tab="settings">Settings</button>
+</nav>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js'); }); }
+</script>
+</body>
+</html>
