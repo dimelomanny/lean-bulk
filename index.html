@@ -16,8 +16,9 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header id="top"><h1>Lean Bulk</h1><div id="sub"></div></header>
+<header id="top"><button id="grocery-btn" type="button" aria-pressed="false">🛒 Grocery List</button><h1>Lean Bulk</h1><div id="sub"></div></header>
 <main id="app"></main>
+<main id="grocery" hidden></main>
 <nav id="tabs">
   <button data-tab="today">Today</button>
   <button data-tab="week">Week</button>
@@ -28,6 +29,7 @@
 </nav>
 <script src="data.js"></script>
 <script src="app.js"></script>
+<script src="grocery.js"></script>
 <script>
 if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js'); }); }
 </script>

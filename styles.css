@@ -33,3 +33,17 @@ ol,ul{padding-left:20px;margin:6px 0}li{margin-bottom:5px}
 .good{color:var(--good)}.warn{color:var(--warn)}
 .stack>*+*{margin-top:8px}
 svg text{fill:var(--muted);font-size:11px}
+/* grocery list (add-on) */
+[hidden]{display:none!important}
+#grocery-btn{float:right;margin-top:1px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.55);color:#fff;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px}
+#grocery-btn[aria-pressed=true]{background:#fff;color:var(--accent)}
+@media (prefers-color-scheme:dark){#grocery-btn[aria-pressed=true]{color:#0f766e}}
+.gl-list{padding:4px 12px}
+.gl-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.gl-item:last-child{border-bottom:0}
+.gl-chk{flex:none;padding-top:2px}.gl-chk input{width:20px;height:20px;accent-color:var(--accent)}
+.gl-main{flex:1;min-width:0}.gl-name{font-weight:700}
+.gl-price{flex:none;text-align:right;font-size:13px;min-width:96px}.gl-p{font-weight:700;font-size:14px}.gl-src{font-size:11px;font-weight:600}
+.gl-item.done .gl-main,.gl-item.done .gl-price{opacity:.45}.gl-item.done .gl-name{text-decoration:line-through}
+.gl-item.opt .gl-name{font-weight:600}
+.gl-tot .tbl td{font-size:14px}
+#grocery a{color:var(--accent)}
