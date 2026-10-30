@@ -154,7 +154,7 @@
 
   const KEY = 'lb.grocery';
   const loadChecks = () => { try { const v = JSON.parse(localStorage.getItem(KEY)); return v && typeof v === 'object' ? v : {}; } catch (e) { return {}; } };
-  const G = { trip: 'all', checks: loadChecks() };
+  const G = { trip: 'wb', checks: loadChecks() };
   const saveChecks = () => { try { localStorage.setItem(KEY, JSON.stringify(G.checks)); } catch (e) { /* storage blocked */ } };
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const money = (n) => '$' + n.toFixed(2);
@@ -199,14 +199,180 @@
       '<div class="gl-price">' + price + '</div></div>';
   }
 
-  function html() {
+  function chipRow() {
+    return '<div class="chips" style="margin-top:10px">' + [['wb', '🛒 Week B shop (for Sun Nov 1 prep)'], ['all', 'Both trips'], ['t1', 'Trip 1'], ['t2', 'Trip 2']].map((x) => '<button class="chip' + (G.trip === x[0] ? ' on' : '') + '" data-gl="trip" data-v="' + x[0] + '">' + x[1] + '</button>').join('') + '</div>';
+  }
+  // ---------- Week B shop (for Sun Nov 1 prep) ----------
+  // Computed from data.js WEEKS.B (Mon Nov 2 – Sun Nov 8): every breakfast, snack, lunch, pre-workout, post-workout, dinner and evening snack.
+  // Item: [name, Week B uses, buy, qty, unit price $, unit, source W/E, flags, note]
+  // flags: s = pantry staple 🧂 (separate subtotal), f = freeze ❄️, r = check pantry/freezer first (may be left from Trip 1), o = optional (not in totals)
+  const WB = [
+    ['Produce', [
+      ['Bananas', '1,298 g ≈ 11 (pancakes, shakes, pre-workout, snacks, yogurt bowls)', '11 bananas (buy some green; they’re eaten through Sun Nov 8)', 11, 0.25, 'each', 'W', '', ''],
+      ['Apple', '1 medium (Wed snack box)', '1 apple', 1, 0.80, 'each', 'E', '', ''],
+      ['Blueberries', '225 g ≈ 1 1/2 cups (Mon, Thu, Sun yogurt)', '1 pint', 1, 2.97, 'pint', 'W', '', 'Sun Nov 8 is 9 days out: frozen blueberries work for the last one'],
+      ['Strawberries', '200 g (Tue + Fri cottage cheese)', '1 lb clamshell', 1, 2.67, '1-lb box', 'W', '', ''],
+      ['Grapes', '150 g ≈ 1 cup (Sat tuna snack)', '~1/2 lb', 0.5, 2.48, 'lb', 'E', '', ''],
+      ['Pineapple chunks', '330 g ≈ 2 cups (Sat + Sun)', '1 × 16-oz cut-pineapple tub (or 1 × 20-oz can in juice, keeps better)', 1, 4.48, '16-oz tub', 'E', '', ''],
+      ['Broccoli florets', '480 g (4 beef & broccoli lunches)', '2 × 12-oz bags', 2, 2.47, '12-oz bag', 'W', '', ''],
+      ['Asparagus', '120 g ≈ 8 spears (Thu cod)', '1 small bunch', 1, 2.98, 'bunch', 'E', '', ''],
+      ['Green beans', '100 g (Sat pork) + 100 g for the Sun Nov 1 add-on', '1 × 12-oz bag (covers both)', 1, 2.48, '12-oz bag', 'E', '', ''],
+      ['Bell peppers', '200 g (Mon steak bowl, egg bites, Sun chili)', '2 peppers', 2, 0.98, 'each', 'E', '', ''],
+      ['Yellow onion', '90 g (Mon steak bowl, Sun chili)', '1 medium', 1, 0.75, 'each', 'E', 'r', ''],
+      ['Garlic', '12 g = 4 cloves (lunch prep) + 1 clove Sun add-on', '1 head', 1, 0.58, 'head', 'E', 'r', ''],
+      ['Lemon', '15 g juice = 1 tbsp (Thu cod) + squeeze for Sat tuna', '1 lemon', 1, 0.68, 'each', 'E', '', ''],
+      ['Romaine', '30 g (Wed tacos)', '1 romaine heart', 1, 1.25, 'heart', 'E', '', ''],
+      ['Tomato', '30 g (Wed tacos)', '1 Roma tomato', 1, 0.30, 'each', 'E', '', ''],
+      ['Cucumber', '160 g (Mon + Sun snack boxes)', '1 cucumber', 1, 0.78, 'each', 'E', '', ''],
+      ['Baby carrots', '200 g (snack boxes + Tue fried rice)', '1 × 1-lb bag', 1, 1.28, '1-lb bag', 'E', 'r', ''],
+      ['Baby spinach', '150 g (egg bites + penne lunches)', '1 × 6–10 oz bag', 1, 2.98, 'bag', 'E', '', ''],
+      ['Red potatoes', '230 g (Sat pork) + 220 g for the Sun Nov 1 add-on', '1 × 1.5-lb bag (covers both)', 1, 2.97, '1.5-lb bag', 'E', '', '']
+    ]],
+    ['Meat & Seafood', [
+      ['Chicken breast, boneless skinless', '440 g ≈ 1 lb (3 penne lunches + Fri BBQ chicken)', '~1 lb', 1, 2.57, 'lb', 'W', 'f', 'Freeze the Fri Nov 6 piece'],
+      ['Ground beef 93/7', '540 g ≈ 1.2 lb (4 lunches 110 g each + Wed tacos 100 g)', '2 × 1-lb packs (freeze the extra)', 2, 7.87, '1-lb pack', 'W', 'fr', 'If ~250 g of Trip 1 beef is in the freezer, 1 pack is enough'],
+      ['Ground turkey 93/7', '130 g (Sun Nov 8 chili)', '1 × 1-lb pack (freeze the rest)', 1, 4.93, 'lb', 'W', 'fr', 'Trip 1 plan reserved 130 g in the freezer for this chili'],
+      ['Shrimp, raw, peeled & deveined (frozen)', '115 g ≈ 4 oz (Tue fried rice)', '1 × 12-oz frozen bag', 1, 7.42, '12-oz bag', 'W', 'fr', 'The Trip 1 1-lb bag would still have ~11 oz'],
+      ['Top sirloin steak', '125 g ≈ 4.4 oz (Mon Nov 2)', '1 small steak (~8–12 oz; cut and freeze the rest)', 0.75, 12.94, 'lb', 'W', '', ''],
+      ['Cod fillet', '170 g = 6 oz (Thu Nov 5)', '1 fillet, or individually frozen fillets (Walmart 2-lb bag ≈ $14.46)', 0.375, 11.99, 'lb', 'E', 'f', 'Bought Fri/Sat, it’s 5–6 days out: freeze it'],
+      ['Pork tenderloin', '145 g ≈ 5 oz (Sat Nov 7)', '1 plain, unseasoned tenderloin; cut 145 g, freeze the rest', 1.1, 4.46, 'lb', 'W', 'f', ''],
+      ['Sliced deli turkey breast', '84 g ≈ 3 oz (Wed roll-ups)', '~3 oz from the deli counter', 3, 0.397, 'oz', 'W', '', '']
+    ]],
+    ['Dairy & Eggs', [
+      ['Large eggs', '15 eggs (pancakes, egg bites, 4 hard-boiled, fried rice)', '1 × 18-ct carton', 1, 2.47, '18-ct', 'W', '', ''],
+      ['Liquid egg whites', '180 g ≈ 3/4 cup (egg bites)', '1 × 16-oz carton', 1, 2.20, '16 oz', 'W', '', ''],
+      ['Cheddar, shredded', '77 g ≈ 2.7 oz (egg bites + chili)', '1 × 8-oz bag', 1, 1.97, '8-oz bag', 'W', 'r', 'About 3.5 oz should be left from the Trip 1 bag'],
+      ['String cheese', '2 sticks (Wed + Thu snacks)', '1 pack', 1, 3.28, '12-ct', 'W', 'r', 'A Trip 1 12-ct pack would still have 9 sticks'],
+      ['Plain 2% Greek yogurt', '750 g (Mon, Thu, Sun yogurt bowls)', '1 × 32-oz tub', 1, 6.96, '32 oz', 'W', '', ''],
+      ['Plain nonfat Greek yogurt', '600 g (PB&J snack + PB-banana bowls)', '1 × 32-oz tub', 1, 3.28, '32 oz', 'W', '', ''],
+      ['2% cottage cheese', '850 g (Tue/Fri evening + Sat/Sun afternoon)', '2 × 16-oz tubs', 2, 2.17, '16 oz', 'E', '', ''],
+      ['2% milk', '1,080 g ≈ 4 1/2 cups (pancakes + PB-banana shakes)', '1/2 gallon', 1, 2.04, '1/2 gal', 'W', '', ''],
+      ['Low-fat chocolate milk', '2 cups (Wed + Fri post-workout)', '1 quart', 1, 1.68, 'quart', 'E', '', ''],
+      ['Hummus (plain)', '120 g = 1/2 cup (Mon + Sun snack boxes)', '1 × 8–10 oz tub', 1, 3.97, '10-oz tub', 'W', '', ''],
+      ['Butter', '17 g (Thu cod, Sat pork)', '1 lb', 1, 3.97, '1 lb', 'E', 'sr', ''],
+      ['Grated parmesan', '30 g = 6 tbsp (penne lunches)', '1 × 8-oz shaker', 1, 2.98, '8 oz', 'E', 'sr', '']
+    ]],
+    ['Bakery / Bread', [
+      ['Plain bagels', '3 (Tue, Thu, Sat breakfasts)', '1 × 6-pack (freeze extras)', 1, 2.48, '6-pack', 'E', '', ''],
+      ['Flour tortillas, 6-inch', '3 (Wed Nov 4 tacos)', '1 pack (street-taco size)', 1, 2.48, 'pack', 'E', '', ''],
+      ['Whole-wheat bread', '6 slices (PB&J + PB toast)', '1 × 20-oz loaf', 1, 1.98, 'loaf', 'E', 'r', 'The plan froze half the Trip 1 loaf for Week B'],
+      ['Pita, 6.5-inch', '2 (Mon + Sun snack boxes)', '1 pack', 1, 2.98, 'pack', 'E', 'r', 'Trip 1 pack extras may be in the freezer']
+    ]],
+    ['Pantry / Dry goods', [
+      ['Peanut butter', '224 g ≈ 14 tbsp', '1 × 16-oz jar', 1, 1.98, '16 oz', 'W', 'r', 'A Trip 1 jar would have ~10 oz left (enough)'],
+      ['Plain rice cakes', '16 cakes (pre-workout + Sat tuna)', '2 packs (~14 each)', 2, 3.64, 'pack', 'W', 'r', 'Trip 1’s 2 packs would have ~16 left'],
+      ['Pretzels', '84 g ≈ 3 oz', '1 × 16-oz bag', 1, 2.48, '16-oz bag', 'E', 'r', ''],
+      ['Beef jerky', '28 g = 1 oz (Thu snack)', '1 small bag', 1, 5.98, 'bag', 'E', 'r', ''],
+      ['Honey', '154 g ≈ 7 tbsp', '1 × 12-oz bottle', 1, 3.74, '12 oz', 'W', 'r', 'A Trip 1 bottle would have ~8 oz left (enough)'],
+      ['Long-grain white rice', '535 g ≈ 1.2 lb dry (lunches, steak bowl, fried rice, BBQ chicken)', '1 × 5-lb bag', 1, 3.52, '5-lb bag', 'W', 'sr', ''],
+      ['Penne', '240 g (3 penne lunches)', '1 × 1-lb box', 1, 1.18, '1 lb', 'E', 'sr', ''],
+      ['Couscous, plain', '75 g (Thu cod)', '1 × ~10-oz box', 1, 2.98, 'box', 'E', 'sr', ''],
+      ['All-purpose flour', '200 g (4 pancake breakfasts)', '1 × 2-lb bag', 1, 1.98, '2-lb bag', 'E', 'sr', ''],
+      ['Baking powder', '12 g = 3 tsp', '1 can', 1, 1.48, 'can', 'E', 'sr', ''],
+      ['Cornstarch', '12 g = 4 tsp', '1 box', 1, 1.68, 'box', 'E', 'sr', ''],
+      ['Almonds', '42 g ≈ 36 almonds', '1 small bag', 1, 3.98, 'bag', 'E', 'sr', ''],
+      ['Cashews', '28 g = 1/4 cup', '1 small bag', 1, 4.48, 'bag', 'E', 'sr', ''],
+      ['Pure maple syrup', '80 g = 4 tbsp (pancakes)', '1 × 8-oz bottle', 1, 5.48, '8 oz', 'E', 'sr', ''],
+      ['Strawberry jam', '40 g = 2 tbsp', '1 jar', 1, 2.48, 'jar', 'E', 'sr', ''],
+      ['Whey protein powder', '150 g ≈ 5 scoops', '1 × 2-lb tub (skip if you have some)', 1, 24.98, '2-lb tub', 'E', 'sor', '']
+    ]],
+    ['Canned & Jarred', [
+      ['Black beans', '150 g (Wed tacos + Sun chili)', '1 × 15-oz can', 1, 0.92, '15-oz can', 'W', 'r', 'Trip 1 bought 3 cans; 1 may be left'],
+      ['Crushed tomatoes', '150 g (Sun chili)', '1 × 14.5–15-oz can', 1, 1.18, 'can', 'E', 'r', 'Trip 1 list included this can'],
+      ['Marinara sauce', '375 g ≈ 1 1/2 cups (penne lunches)', '1 × 24-oz jar (don’t reuse a jar opened last week)', 1, 1.68, '24-oz jar', 'W', '', ''],
+      ['Salsa', '30 g = 2 tbsp (Wed tacos)', '1 × 16-oz jar', 1, 2.48, '16-oz jar', 'E', 'r', ''],
+      ['Light tuna in water', '1 × 5-oz can (Sat snack)', '1 can', 1, 1.08, '5-oz can', 'E', 'r', ''],
+      ['Light mayonnaise', '1 tbsp', '1 small jar', 1, 3.48, 'jar', 'E', 'sr', '']
+    ]],
+    ['Spices, Condiments & Sauces', [
+      ['Taco seasoning', '6 g = 2 tsp (Wed tacos)', '1 packet', 1, 0.78, 'packet', 'E', 'r', ''],
+      ['Olive oil', '57 g ≈ 4 tbsp', '1 × 16.9-oz bottle', 1, 6.12, '17 oz', 'W', 'sr', ''],
+      ['Cooking spray', 'pancakes, egg bites, penne prep, BBQ chicken', '1 can', 1, 2.48, 'can', 'E', 'sr', ''],
+      ['Soy sauce, low sodium', '88 g ≈ 5.5 tbsp', '1 × 10-oz bottle', 1, 2.48, '10 oz', 'E', 'sr', ''],
+      ['BBQ sauce', '35 g = 2 tbsp (Fri)', '1 bottle', 1, 1.98, 'bottle', 'E', 'sr', ''],
+      ['Dijon mustard', '1 tsp (Sat pork)', '1 small jar', 1, 1.98, 'jar', 'E', 'sr', ''],
+      ['Chili powder + ground cumin', '2 tsp + 1/2 tsp (Sun chili)', '1 jar each', 1, 3.06, 'pair', 'E', 'sr', ''],
+      ['Smoked paprika', 'Fri BBQ chicken', '1 jar', 1, 2.48, 'jar', 'E', 'sr', ''],
+      ['Salt + black pepper', 'throughout', '1 salt + 1 pepper', 1, 3.00, 'pair', 'E', 'sr', '']
+    ]],
+    ['Frozen', [
+      ['Frozen sweet corn', '60 g = 1/3 cup (Fri)', '1 × 12–16 oz bag', 1, 1.28, 'bag', 'E', 'sr', ''],
+      ['Frozen peas', '40 g = 1/4 cup (Tue fried rice)', '1 × 12–16 oz bag', 1, 1.28, 'bag', 'E', 'sr', '']
+    ]],
+    ['Prep supplies', [
+      ['Parchment paper', 'pancakes / sheet pans', '1 roll', 1, 3.48, 'roll', 'E', 'sr', ''],
+      ['Aluminum foil', 'Thu cod, Fri BBQ chicken', '1 roll', 1, 3.98, 'roll', 'E', 'sr', ''],
+      ['Gallon freezer bags', 'Thu–Sun portions go to the freezer', '1 box', 1, 3.48, 'box', 'E', 'sr', '']
+    ]]
+  ];
+  // Sun Nov 1 dinner is still Week A: D7 Sheet-Pan Lemon Herb Chicken Thighs & Potatoes (150 g thighs, 220 g red potatoes, 100 g green beans, 1 tbsp oil, 1 tbsp lemon, 1 garlic clove, oregano, rosemary)
+  const ADDON = [
+    ['Chicken thighs, boneless skinless', '150 g ≈ 5.3 oz', '1 small pack (freeze the extra) or 2 thighs from the Publix counter', 1.75, 3.92, 'lb', 'W', 'f', ''],
+    ['Lemon (extra)', '1 tbsp juice', '1 lemon', 1, 0.68, 'each', 'E', '', ''],
+    ['Dried oregano', '1/2 tsp', '1 jar (skip if you have it)', 1, 1.28, 'jar', 'E', 's', ''],
+    ['Dried rosemary', '1/2 tsp', '1 jar (skip if you have it)', 1, 1.48, 'jar', 'E', 's', '']
+  ];
+  const WKEY = 'lb.groceryWeekB';
+  const loadW = () => { try { const v = JSON.parse(localStorage.getItem(WKEY)); return v && typeof v === 'object' ? v : {}; } catch (e) { return {}; } };
+  G.wb = loadW();
+  const saveW = () => { try { localStorage.setItem(WKEY, JSON.stringify(G.wb)); } catch (e) { /* storage blocked */ } };
+  const wLine = (it) => r2(it[3] * it[4]);
+  function wbTotals() {
+    const t = { trip: 0, staple: 0, opt: 0, addon: 0, look: 0, est: 0 };
+    WB.forEach((s) => s[1].forEach((it) => {
+      const v = wLine(it);
+      if (it[7].indexOf('o') >= 0) { t.opt += v; return; }
+      if (it[7].indexOf('s') >= 0) t.staple += v; else t.trip += v;
+      if (it[6] === 'W') t.look++; else t.est++;
+    }));
+    ADDON.forEach((it) => { t.addon += wLine(it); });
+    t.trip = r2(t.trip); t.staple = r2(t.staple); t.addon = r2(t.addon); t.grand = r2(t.trip + t.staple); t.withAddon = r2(t.grand + t.addon);
+    return t;
+  }
+  function wbRow(it, id) {
+    const on = !!G.wb[id], fl = it[7];
+    const marks = (fl.indexOf('f') >= 0 ? ' ❄️' : '') + (fl.indexOf('s') >= 0 ? ' 🧂' : '');
+    const price = '<div class="gl-p">' + money(it[4]) + '<span class="muted"> /' + esc(it[5]) + '</span></div><div class="muted">×' + qtyTxt(it[3]) + ' = <b class="gl-line">' + money(wLine(it)) + '</b></div><div class="gl-src ' + (it[6] === 'W' ? 'good' : 'warn') + '">' + (it[6] === 'W' ? 'Walmart.com' : 'est.') + '</div>';
+    return '<div class="gl-item' + (on ? ' done' : '') + '"><label class="gl-chk"><input type="checkbox" data-gl="wbchk" data-id="' + esc(id) + '"' + (on ? ' checked' : '') + '></label>' +
+      '<div class="gl-main"><div class="gl-name">' + esc(it[0]) + marks + (fl.indexOf('o') >= 0 ? ' <span class="muted">(optional, not in totals)</span>' : '') + '</div>' +
+      '<div class="small">Buy: ' + esc(it[2]) + '</div><div class="muted">Week B uses: ' + esc(it[1]) + '</div>' +
+      (fl.indexOf('r') >= 0 ? '<div class="small warn">Check your pantry/freezer first' + (it[8] ? ': ' + esc(it[8]) : '') + '</div>' : (it[8] ? '<div class="muted">' + esc(it[8]) + '</div>' : '')) +
+      '</div><div class="gl-price">' + price + '</div></div>';
+  }
+  function htmlWB() {
+    const t = wbTotals();
+    let h = '<div class="card"><div class="row" style="justify-content:space-between;align-items:center"><button data-gl="back">‹ Back to meal plan</button><button data-gl="reset">Reset checkboxes</button></div>';
+    h += '<h2 style="margin-top:12px">Week B shop (for Sun Nov 1 prep)</h2><div class="small">Everything for Week B, Mon Nov 2 – Sun Nov 8: all breakfasts, snacks, lunches, pre/post-workout and dinners, through the Sun Nov 8 turkey chili. Quantities come from the Week B recipes in the plan. Shop Fri Oct 30 or Sat Oct 31, prep Sunday Nov 1. Supplements aren’t included.</div>';
+    h += '<div class="muted" style="margin-top:6px">❄️ = freeze when you get home (eaten late in the week) · 🧂 = pantry staple · <span class="warn">Check your pantry/freezer first</span> = may be left over from Trip 1, if you did it</div>';
+    h += chipRow() + '</div>';
+    h += '<div class="card small"><b>Fri/Sat shopping tip:</b> Publix Lake Nona Plaza (0.3 mi from Concorde, 7 AM–10 PM) covers all of Week B in one stop, including counter cuts of one sirloin, 6 oz cod and a small pork tenderloin, and 3 oz of deli turkey. Walmart Supercenter on Narcoossee (2.4 mi, 6 AM–11 PM) is the cheapest one-stop. ALDI closes at 8 PM. Hours are the stores’ regular hours; check the store page before a late run.</div>';
+    WB.forEach((s, si) => {
+      const sub = r2(s[1].reduce((a, it) => a + (it[7].indexOf('o') >= 0 ? 0 : wLine(it)), 0));
+      h += '<h2>' + esc(s[0]) + ' <span class="muted">' + money(sub) + '</span></h2><div class="card gl-list">' + s[1].map((it, ii) => wbRow(it, 'wb.' + si + '.' + ii)).join('') + '</div>';
+    });
+    h += '<h2>Sun Nov 1 dinner add-on <span class="muted">' + money(t.addon) + '</span></h2><div class="card"><div class="small">Sunday’s dinner is still Week A: Sheet-Pan Lemon Herb Chicken Thighs & Potatoes. If you didn’t do Trip 1 as planned, make sure you have these too. The 220 g red potatoes, 100 g green beans, garlic clove and 1 tbsp olive oil are covered by the Week B bags above.</div><div class="gl-list" style="padding:0">' + ADDON.map((it, ii) => wbRow(it, 'add.' + ii)).join('') + '</div></div>';
+    h += '<div class="card gl-tot"><h3 style="margin-top:0">Estimated cost · Week B shop</h3><table class="tbl">' +
+      '<tr><td>Week B groceries</td><td><b>' + money(t.trip) + '</b></td></tr>' +
+      '<tr><td>Pantry staples 🧂 <div class="muted">skip if you still have them from Trip 1</div></td><td><b>' + money(t.staple) + '</b></td></tr>' +
+      '<tr><td><b>Week B total</b></td><td><b>' + money(t.grand) + '</b></td></tr>' +
+      '<tr><td>+ Sun Nov 1 add-on</td><td>' + money(t.addon) + '</td></tr>' +
+      '<tr><td>Week B total with add-on</td><td>' + money(t.withAddon) + '</td></tr></table>' +
+      '<div class="muted" style="margin-top:6px">Items marked “check your pantry/freezer first” are still counted, since you may not have them. Whey (~$24.98, optional) isn’t included.</div>' +
+      '<div class="small warn" style="margin-top:8px">Prices are estimates. They vary by store and week, and items sold by weight (meat, fish, deli, bananas, grapes) settle at the register. Prices checked Oct 2026.</div>' +
+      '<div class="muted" style="margin-top:4px">“Walmart.com” = listed price looked up Oct 2026 (Walmart #4365 on Narcoossee, 2.4 mi from Concorde; in-store can differ). “est.” = typical Lake Nona price where no lookup was possible. Publix and Sprouts usually run 10–25% higher, ALDI a bit lower. ' + t.look + ' prices looked up, ' + t.est + ' estimated.</div></div>';
+    return h + storesHtml();
+  }
+
+  function html() { return G.trip === 'wb' ? htmlWB() : htmlBi(); }
+
+  function htmlBi() {
     const t = totals(G.trip), all = totals('all'), t1 = totals('t1'), t2 = totals('t2');
     const label = G.trip === 't1' ? 'Trip 1' : G.trip === 't2' ? 'Trip 2' : 'Both trips';
     let h = '<div class="card"><div class="row" style="justify-content:space-between;align-items:center"><button data-gl="back">‹ Back to meal plan</button><button data-gl="reset">Reset checkboxes</button></div>';
     h += '<h2 style="margin-top:12px">Two-week grocery list</h2><div class="small">Week A (Mon Oct 26) + Week B (Mon Nov 2), 1 person. Totals come from every meal, snack, Sunday prep and dinner in the plan. Supplements aren’t included.</div>';
     h += '<div class="small" style="margin-top:6px"><b>Trip 1</b> (Sat Oct 24 / Sun Oct 25, before Week A prep) · <b>Trip 2</b> (Sat Oct 31 / Sun Nov 1, before Week B prep). Shopping once? Buy it all on Trip 1, freeze the ❄️ meat and fish in single-meal portions, and buy Trip 2 produce and dairy fresh in week 2.</div>';
     h += '<div class="muted" style="margin-top:6px">❄️ = freeze if you buy early · 🧂 = pantry staple that lasts past two weeks (one-time buy)</div>';
-    h += '<div class="chips" style="margin-top:10px">' + [['all', 'Both trips'], ['t1', 'Trip 1'], ['t2', 'Trip 2']].map((x) => '<button class="chip' + (G.trip === x[0] ? ' on' : '') + '" data-gl="trip" data-v="' + x[0] + '">' + x[1] + '</button>').join('') + '</div></div>';
+    h += chipRow() + '</div>';
 
     h += '<div class="card gl-tot"><h3 style="margin-top:0">Estimated cost · ' + label + '</h3><table class="tbl">' +
       '<tr><td>Groceries (every trip)</td><td><b>' + money(t.trip) + '</b></td></tr>' +
@@ -223,6 +389,11 @@
       h += '<h2>' + esc(s[0]) + ' <span class="muted">' + money(sub) + '</span></h2><div class="card gl-list">' + rows.map((x) => itemRow(x[0], si, x[1])).join('') + '</div>';
     });
 
+    return h + storesHtml();
+  }
+
+  function storesHtml() {
+    let h = '';
     h += '<h2>Stores near Lake Nona Concorde</h2><div class="card"><div class="small">Measured from Lake Nona Concorde Apartments, 10105 Selten Way, Orlando, FL 32827 (Greenwood district, next to Lake Nona Plaza). Driving distance and time via OpenStreetMap routing, no traffic.</div><div class="gl-list" style="padding:0">' +
       STORES.map((x) => '<div class="gl-item"><div class="gl-main"><div class="gl-name"><a href="' + esc(x[1]) + '" target="_blank" rel="noopener">' + esc(x[0]) + '</a></div><div class="muted">' + esc(x[2]) + '</div><div class="small" style="margin-top:2px">' + esc(x[4]) + '</div></div><div class="gl-price"><b>' + esc(x[3].split(' · ')[0]) + '</b><div class="muted">' + esc(x[3].split(' · ')[1] || '') + '</div></div></div>').join('') +
       '</div><div class="muted" style="margin-top:6px">“Good for” is what each chain typically carries, not a live inventory check.</div></div>';
@@ -255,13 +426,15 @@
     const a = el.dataset.gl;
     if (a === 'back') { show(false); window.scrollTo(0, 0); }
     else if (a === 'trip') { G.trip = el.dataset.v; render(); }
-    else if (a === 'reset') { if (window.confirm('Uncheck every item on the grocery list?')) { G.checks = {}; saveChecks(); render(); } }
+    else if (a === 'reset') { if (window.confirm(G.trip === 'wb' ? 'Uncheck every item on the Week B list?' : 'Uncheck every item on the two-week list?')) { if (G.trip === 'wb') { G.wb = {}; saveW(); } else { G.checks = {}; saveChecks(); } render(); } }
   });
   sec.addEventListener('change', (e) => {
-    const el = e.target; if (el.dataset.gl !== 'chk') return;
-    if (el.checked) G.checks[el.dataset.id] = 1; else delete G.checks[el.dataset.id];
-    saveChecks(); el.closest('.gl-item').classList.toggle('done', el.checked);
+    const el = e.target, k = el.dataset.gl; if (k !== 'chk' && k !== 'wbchk') return;
+    const store = k === 'wbchk' ? G.wb : G.checks;
+    if (el.checked) store[el.dataset.id] = 1; else delete store[el.dataset.id];
+    if (k === 'wbchk') saveW(); else saveChecks();
+    el.closest('.gl-item').classList.toggle('done', el.checked);
   });
   if (location.hash === '#grocery') show(true, true);
-  window.LB_GROCERY = { totals: totals, SECTIONS: SECTIONS };
+  window.LB_GROCERY = { totals: totals, SECTIONS: SECTIONS, wbTotals: wbTotals, WB: WB, ADDON: ADDON };
 })();
