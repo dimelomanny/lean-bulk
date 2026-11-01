@@ -14,7 +14,7 @@
       ['Pineapple chunks', '660 g ≈ 4 cups (2 cups/week)', '1 × 16-oz cut-pineapple tub each week (or 2 × 20-oz cans in juice, drained)', 'T1 + T2', 1, 1, 4.48, '16-oz tub', 'E', ''],
       ['Broccoli florets', '1,040 g ≈ 2.3 lb (A 560 g, B 480 g)', '~1.25 lb each week (e.g., 2 × 12-oz bags of florets)', 'T1 + T2', 2, 2, 2.47, '12-oz bag', 'W', ''],
       ['Asparagus', '220 g ≈ 15 spears (A 6–7, B 8)', '1 small bunch each week', 'T1 + T2', 1, 1, 2.98, 'bunch', 'E', ''],
-      ['Green beans', '200 g ≈ 2 cups (Sun Nov 1 + Sat Nov 7)', '1 × 12-oz bag of trimmed beans', 'T2 (if Trip 2 is the morning of Sun Nov 1) or T1', 0, 1, 2.48, '12-oz bag', 'E', ''],
+      ['Green beans', '200 g ≈ 2 cups (Sun Nov 8 + Sat Nov 14)', '1 × 12-oz bag of trimmed beans', 'T2 (if Trip 2 is the morning of Sun Nov 8) or T1', 0, 1, 2.48, '12-oz bag', 'E', ''],
       ['Bell peppers', '360 g ≈ 2.5 peppers (A 160 g, B 200 g)', '3 peppers', 'T1 (1) + T2 (2)', 1, 2, 0.98, 'each', 'E', ''],
       ['Yellow onion', '170 g ≈ 1.5 medium', '2 medium (or a 2–3 lb bag 🧂)', 'Either', 2, 0, 0.75, 'each', 'E', ''],
       ['Garlic', '27 g ≈ 9 cloves', '1 head', 'T1', 1, 0, 0.58, 'head', 'E', ''],
@@ -24,19 +24,19 @@
       ['Cucumber', '240 g (A 80 g, B 160 g)', '2 cucumbers, 1 each trip', 'T1 + T2', 1, 1, 0.78, 'each', 'E', ''],
       ['Baby carrots', '280 g (A 80 g, B 200 g)', '1 × 1-lb bag', 'T1', 1, 0, 1.28, '1-lb bag', 'E', ''],
       ['Baby spinach', '150 g (Week B only)', '1 × 6–10 oz bag (a 5-oz box is 8 g short)', 'T2', 0, 1, 2.98, 'bag', 'E', ''],
-      ['Russet potato', '150 g (1 small, Sat Oct 31)', '1 small russet', 'T1', 1, 0, 0.50, 'each', 'E', ''],
-      ['Red potatoes', '450 g ≈ 1 lb (Sun Nov 1, Sat Nov 7)', '1 × 1.5-lb bag', 'T1', 1, 0, 2.97, '1.5-lb bag', 'E', '']
+      ['Russet potato', '150 g (1 small, Sat Nov 7)', '1 small russet', 'T1', 1, 0, 0.50, 'each', 'E', ''],
+      ['Red potatoes', '450 g ≈ 1 lb (Sun Nov 8, Sat Nov 14)', '1 × 1.5-lb bag', 'T1', 1, 0, 2.97, '1.5-lb bag', 'E', '']
     ]],
     ['Meat & Seafood', [
-      ['Chicken breast, boneless skinless', '1,135 g ≈ 2.5 lb (A 695 g, B 440 g)', '~1.6 lb on Trip 1 + ~1 lb on Trip 2 (or one 2.5–3 lb family pack ❄️)', 'T1 + T2. Freeze the Fri Oct 30 piece if it won’t be used within 2 days', 1.6, 1, 2.57, 'lb', 'W', 'f'],
-      ['Chicken thighs, boneless skinless', '150 g (Sun Nov 1)', '1 small pack (freeze the extra) or 2 thighs from the butcher', 'T1', 1.75, 0, 3.92, 'lb', 'W', 'f'],
+      ['Chicken breast, boneless skinless', '1,135 g ≈ 2.5 lb (A 695 g, B 440 g)', '~1.6 lb on Trip 1 + ~1 lb on Trip 2 (or one 2.5–3 lb family pack ❄️)', 'T1 + T2. Freeze the Fri Nov 6 piece if it won’t be used within 2 days', 1.6, 1, 2.57, 'lb', 'W', 'f'],
+      ['Chicken thighs, boneless skinless', '150 g (Sun Nov 8)', '1 small pack (freeze the extra) or 2 thighs from the butcher', 'T1', 1.75, 0, 3.92, 'lb', 'W', 'f'],
       ['Ground beef 93/7', '760 g ≈ 1.7 lb', '2 × 1-lb packs', '1 lb T1, split into 100 g + 120 g portions; 1 lb T2 for prep + Wed', 1, 1, 7.87, '1-lb pack', 'W', 'f'],
-      ['Ground turkey 93/7', '460 g ≈ 1 lb (330 g Week A prep + 130 g chili Sun Nov 8)', '1 × 1.25-lb pack (a 1-lb pack is 6 g short; fine)', 'T1, freeze the 130 g for the chili', 1.25, 0, 4.93, 'lb', 'W', 'f'],
-      ['Shrimp, raw, peeled & deveined', '255 g ≈ 9 oz (Mon Oct 26 + Tue Nov 3)', '1 × 1-lb bag frozen raw shrimp', 'T1, stays frozen', 1, 0, 10.97, '1-lb bag', 'W', 'f'],
-      ['Salmon fillet', '125 g ≈ 4.4 oz (Thu Oct 29)', '1 fillet (4–6 oz), or a bag of individually frozen fillets', 'T1 (fresh only lasts 1–2 days)', 0.33, 0, 10.64, 'lb', 'W', 'f'],
-      ['Cod fillet', '170 g = 6 oz (Thu Nov 5)', '1 fillet, or individually frozen cod fillets (Walmart 2-lb frozen bag ≈ $14.46)', 'T2', 0, 0.375, 11.99, 'lb', 'E', 'f'],
-      ['Top sirloin steak', '125 g ≈ 4.4 oz (Mon Nov 2)', '1 small steak (~8 oz–12 oz: cut and freeze the rest)', 'T2 (it’s eaten the next day)', 0, 0.75, 12.94, 'lb', 'W', ''],
-      ['Pork tenderloin', '145 g ≈ 5 oz (Sat Nov 7)', '1 plain, unseasoned tenderloin (~1–1.25 lb). Cut a 145 g piece and freeze the rest', 'T2', 0, 1.1, 4.46, 'lb', 'W', 'f'],
+      ['Ground turkey 93/7', '460 g ≈ 1 lb (330 g Week A prep + 130 g chili Sun Nov 15)', '1 × 1.25-lb pack (a 1-lb pack is 6 g short; fine)', 'T1, freeze the 130 g for the chili', 1.25, 0, 4.93, 'lb', 'W', 'f'],
+      ['Shrimp, raw, peeled & deveined', '255 g ≈ 9 oz (Mon Nov 2 + Tue Nov 10)', '1 × 1-lb bag frozen raw shrimp', 'T1, stays frozen', 1, 0, 10.97, '1-lb bag', 'W', 'f'],
+      ['Salmon fillet', '125 g ≈ 4.4 oz (Thu Nov 5)', '1 fillet (4–6 oz), or a bag of individually frozen fillets', 'T1 (fresh only lasts 1–2 days)', 0.33, 0, 10.64, 'lb', 'W', 'f'],
+      ['Cod fillet', '170 g = 6 oz (Thu Nov 12)', '1 fillet, or individually frozen cod fillets (Walmart 2-lb frozen bag ≈ $14.46)', 'T2', 0, 0.375, 11.99, 'lb', 'E', 'f'],
+      ['Top sirloin steak', '125 g ≈ 4.4 oz (Mon Nov 9)', '1 small steak (~8 oz–12 oz: cut and freeze the rest)', 'T2 (it’s eaten the next day)', 0, 0.75, 12.94, 'lb', 'W', ''],
+      ['Pork tenderloin', '145 g ≈ 5 oz (Sat Nov 14)', '1 plain, unseasoned tenderloin (~1–1.25 lb). Cut a 145 g piece and freeze the rest', 'T2', 0, 1.1, 4.46, 'lb', 'W', 'f'],
       ['Sliced deli turkey breast', '336 g ≈ 12 oz (A 252 g, B 84 g)', '~9 oz on Trip 1 + ~3 oz on Trip 2 (deli counter or prepacked)', 'T1 + T2', 9, 3, 0.397, 'oz', 'W', '']
     ]],
     ['Dairy & Eggs', [
@@ -57,19 +57,19 @@
     ]],
     ['Bakery / Bread', [
       ['Flour tortillas, 10-inch burrito size', '4 (Week A burritos)', '1 pack (usually 8; freeze the rest)', 'T1', 1, 0, 3.48, '8-ct', 'W', ''],
-      ['Flour tortillas, 8-inch', '2 (Tue Oct 27 fajitas)', '1 pack (usually 8–10; freeze the rest)', 'T1', 1, 0, 2.98, 'pack', 'E', ''],
-      ['Flour tortillas, 6-inch', '3 (Wed Nov 4 tacos)', '1 pack (street-taco/fajita size)', 'T2', 0, 1, 2.48, 'pack', 'E', ''],
+      ['Flour tortillas, 8-inch', '2 (Tue Nov 3 fajitas)', '1 pack (usually 8–10; freeze the rest)', 'T1', 1, 0, 2.98, 'pack', 'E', ''],
+      ['Flour tortillas, 6-inch', '3 (Wed Nov 11 tacos)', '1 pack (street-taco/fajita size)', 'T2', 0, 1, 2.48, 'pack', 'E', ''],
       ['English muffins', '6 (Week A prep)', '1 × 6-pack', 'T1', 1, 0, 1.48, '6-pack', 'E', ''],
       ['Plain bagels', '3 (Week B)', '1 × 6-pack, or 3 from the bakery (freeze extras)', 'T2', 0, 1, 2.48, '6-pack', 'E', ''],
       ['Whole-wheat bread', '14 slices (A 8, B 6)', '1 × 20-oz loaf (freeze half for Week B)', 'T1', 1, 0, 1.98, 'loaf', 'E', ''],
-      ['Hamburger bun', '1 (Sat Oct 31)', '1 pack (freeze the rest) or 1 bakery bun', 'T1', 1, 0, 1.48, '8-pack', 'E', ''],
+      ['Hamburger bun', '1 (Sat Nov 7)', '1 pack (freeze the rest) or 1 bakery bun', 'T1', 1, 0, 1.48, '8-pack', 'E', ''],
       ['Pita, 6.5-inch', '3 (A 1, B 2)', '1 pack (5–6; freeze the rest)', 'T1', 1, 0, 2.98, 'pack', 'E', '']
     ]],
     ['Pantry / Dry goods', [
       ['Long-grain white rice', '1,270 g ≈ 2.8 lb (dry)', '1 × 5-lb bag (or 2 × 2-lb bags for exactly two weeks)', 'T1', 1, 0, 3.52, '5-lb bag', 'W', 's'],
-      ['Spaghetti', '90 g (Wed Oct 28)', '1 × 1-lb box', 'T1', 1, 0, 1.18, '1 lb', 'E', 's'],
+      ['Spaghetti', '90 g (Wed Nov 4)', '1 × 1-lb box', 'T1', 1, 0, 1.18, '1 lb', 'E', 's'],
       ['Penne', '240 g (Week B prep)', '1 × 1-lb box', 'T1', 1, 0, 1.18, '1 lb', 'E', 's'],
-      ['Couscous, plain', '75 g (Thu Nov 5)', '1 × ~10-oz box (plain, not flavored)', 'T1', 1, 0, 2.98, 'box', 'E', 's'],
+      ['Couscous, plain', '75 g (Thu Nov 12)', '1 × ~10-oz box (plain, not flavored)', 'T1', 1, 0, 2.98, 'box', 'E', 's'],
       ['All-purpose flour', '200 g (pancakes)', '1 × 2-lb bag', 'T1', 1, 0, 1.98, '2-lb bag', 'E', 's'],
       ['Baking powder', '1 tbsp', '1 can', 'T1', 1, 0, 1.48, 'can', 'E', 's'],
       ['Cornstarch', '15 g ≈ 5 tsp', '1 box', 'T1', 1, 0, 1.68, 'box', 'E', 's'],
@@ -86,7 +86,7 @@
     ]],
     ['Canned & Jarred', [
       ['Black beans', '490 g drained ≈ 2 3/4 cups', '3 × 15-oz cans', 'Shelf-stable, can all go on T1', 3, 0, 0.92, '15-oz can', 'W', ''],
-      ['Crushed tomatoes', '150 g = 2/3 cup (Sun Nov 8 chili)', '1 × 14.5–15-oz can', 'T1', 1, 0, 1.18, 'can', 'E', ''],
+      ['Crushed tomatoes', '150 g = 2/3 cup (Sun Nov 15 chili)', '1 × 14.5–15-oz can', 'T1', 1, 0, 1.18, 'can', 'E', ''],
       ['Marinara sauce', '525 g ≈ 2 1/4 cups', '1 × 24-oz jar (refrigerate once open, use within ~5–7 days)', 'T1', 1, 0, 1.68, '24-oz jar', 'W', ''],
       ['Salsa', '270 g ≈ 1 cup (A 240 g, B 30 g)', '1 × 16-oz jar', 'T1', 1, 0, 2.48, '16-oz jar', 'E', ''],
       ['Light tuna in water', '2 × 5-oz cans', '2 cans', 'T1', 2, 0, 1.08, '5-oz can', 'E', ''],
@@ -97,8 +97,8 @@
       ['Cooking spray', 'used throughout the steps', '1 can', 'T1', 1, 0, 2.48, 'can', 'E', 's'],
       ['Soy sauce, low sodium', '104 g ≈ 6.5 tbsp', '1 × 10-oz bottle', 'T1', 1, 0, 2.48, '10 oz', 'E', 's'],
       ['Teriyaki sauce', '162 g ≈ 9 tbsp (Week A)', '1 × 10-oz bottle', 'T1', 1, 0, 2.98, '10 oz', 'E', 's'],
-      ['BBQ sauce', '35 g = 2 tbsp (Fri Nov 6)', '1 bottle', 'T1', 1, 0, 1.98, 'bottle', 'E', 's'],
-      ['Dijon mustard', '1 tsp (Sat Nov 7)', '1 small jar', 'T1', 1, 0, 1.98, 'jar', 'E', 's'],
+      ['BBQ sauce', '35 g = 2 tbsp (Fri Nov 13)', '1 bottle', 'T1', 1, 0, 1.98, 'bottle', 'E', 's'],
+      ['Dijon mustard', '1 tsp (Sat Nov 14)', '1 small jar', 'T1', 1, 0, 1.98, 'jar', 'E', 's'],
       ['Taco seasoning', '22 g ≈ 7 1/2 tsp', '1 jar, or 2 × 1-oz packets', 'T1', 2, 0, 0.78, 'packet', 'E', ''],
       ['Chili powder', '2 tsp', '1 jar', 'T1', 1, 0, 1.28, 'jar', 'E', 's'],
       ['Ground cumin', '1/2 tsp', '1 jar', 'T1', 1, 0, 1.78, 'jar', 'E', 's'],
@@ -111,7 +111,7 @@
     ]],
     ['Frozen', [
       ['Frozen sweet corn', '180 g ≈ 1 cup (A 120 g, B 60 g)', '1 × 12–16 oz bag', 'T1', 1, 0, 1.28, 'bag', 'E', 's'],
-      ['Frozen peas', '40 g = 1/4 cup (Tue Nov 3)', '1 × 12–16 oz bag', 'T1', 1, 0, 1.28, 'bag', 'E', 's']
+      ['Frozen peas', '40 g = 1/4 cup (Tue Nov 10)', '1 × 12–16 oz bag', 'T1', 1, 0, 1.28, 'bag', 'E', 's']
     ]],
     ['Other (prep supplies)', [
       ['Parchment paper', 'sheet-pan prep', '1 roll', 'T1', 1, 0, 3.48, 'roll', 'E', 's'],
@@ -154,7 +154,7 @@
 
   const KEY = 'lb.grocery';
   const loadChecks = () => { try { const v = JSON.parse(localStorage.getItem(KEY)); return v && typeof v === 'object' ? v : {}; } catch (e) { return {}; } };
-  const G = { trip: 'wb', checks: loadChecks() };
+  const G = { trip: 'wa', checks: loadChecks() };
   const saveChecks = () => { try { localStorage.setItem(KEY, JSON.stringify(G.checks)); } catch (e) { /* storage blocked */ } };
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const money = (n) => '$' + n.toFixed(2);
@@ -200,42 +200,42 @@
   }
 
   function chipRow() {
-    return '<div class="chips" style="margin-top:10px">' + [['wb', '🛒 Week B shop (for Sun Nov 1 prep)'], ['all', 'Both trips'], ['t1', 'Trip 1'], ['t2', 'Trip 2']].map((x) => '<button class="chip' + (G.trip === x[0] ? ' on' : '') + '" data-gl="trip" data-v="' + x[0] + '">' + x[1] + '</button>').join('') + '</div>';
+    return '<div class="chips" style="margin-top:10px">' + [['wa', '🛒 Week A shop (for Sun Nov 1 prep)'], ['wb', 'Week B shop (Nov 9–15, prep Sun Nov 8)'], ['all', 'Both trips'], ['t1', 'Trip 1'], ['t2', 'Trip 2']].map((x) => '<button class="chip' + (G.trip === x[0] ? ' on' : '') + '" data-gl="trip" data-v="' + x[0] + '">' + x[1] + '</button>').join('') + '</div>';
   }
-  // ---------- Week B shop (for Sun Nov 1 prep) ----------
-  // Computed from data.js WEEKS.B (Mon Nov 2 – Sun Nov 8): every breakfast, snack, lunch, pre-workout, post-workout, dinner and evening snack.
+  // ---------- Week B shop (Nov 9–15, prep Sun Nov 8) ----------
+  // Computed from data.js WEEKS.B (Mon Nov 9 – Sun Nov 15): every breakfast, snack, lunch, pre-workout, post-workout, dinner and evening snack.
   // Item: [name, Week B uses, buy, qty, unit price $, unit, source W/E, flags, note]
-  // flags: s = pantry staple 🧂 (separate subtotal), f = freeze ❄️, r = check pantry/freezer first (may be left from Trip 1), o = optional (not in totals)
+  // flags: s = pantry staple 🧂 (separate subtotal), f = freeze ❄️, r = check pantry/freezer first (may be left from the previous shop), o = optional (not in totals)
   const WB = [
     ['Produce', [
-      ['Bananas', '1,298 g ≈ 11 (pancakes, shakes, pre-workout, snacks, yogurt bowls)', '11 bananas (buy some green; they’re eaten through Sun Nov 8)', 11, 0.25, 'each', 'W', '', ''],
+      ['Bananas', '1,298 g ≈ 11 (pancakes, shakes, pre-workout, snacks, yogurt bowls)', '11 bananas (buy some green; they’re eaten through Sun Nov 15)', 11, 0.25, 'each', 'W', '', ''],
       ['Apple', '1 medium (Wed snack box)', '1 apple', 1, 0.80, 'each', 'E', '', ''],
-      ['Blueberries', '225 g ≈ 1 1/2 cups (Mon, Thu, Sun yogurt)', '1 pint', 1, 2.97, 'pint', 'W', '', 'Sun Nov 8 is 9 days out: frozen blueberries work for the last one'],
+      ['Blueberries', '225 g ≈ 1 1/2 cups (Mon, Thu, Sun yogurt)', '1 pint', 1, 2.97, 'pint', 'W', '', 'Sun Nov 15 is 9 days out: frozen blueberries work for the last one'],
       ['Strawberries', '200 g (Tue + Fri cottage cheese)', '1 lb clamshell', 1, 2.67, '1-lb box', 'W', '', ''],
       ['Grapes', '150 g ≈ 1 cup (Sat tuna snack)', '~1/2 lb', 0.5, 2.48, 'lb', 'E', '', ''],
       ['Pineapple chunks', '330 g ≈ 2 cups (Sat + Sun)', '1 × 16-oz cut-pineapple tub (or 1 × 20-oz can in juice, keeps better)', 1, 4.48, '16-oz tub', 'E', '', ''],
       ['Broccoli florets', '480 g (4 beef & broccoli lunches)', '2 × 12-oz bags', 2, 2.47, '12-oz bag', 'W', '', ''],
       ['Asparagus', '120 g ≈ 8 spears (Thu cod)', '1 small bunch', 1, 2.98, 'bunch', 'E', '', ''],
-      ['Green beans', '100 g (Sat pork) + 100 g for the Sun Nov 1 add-on', '1 × 12-oz bag (covers both)', 1, 2.48, '12-oz bag', 'E', '', ''],
+      ['Green beans', '100 g (Sat pork)', '1 × 12-oz bag', 1, 2.48, '12-oz bag', 'E', '', ''],
       ['Bell peppers', '200 g (Mon steak bowl, egg bites, Sun chili)', '2 peppers', 2, 0.98, 'each', 'E', '', ''],
       ['Yellow onion', '90 g (Mon steak bowl, Sun chili)', '1 medium', 1, 0.75, 'each', 'E', 'r', ''],
-      ['Garlic', '12 g = 4 cloves (lunch prep) + 1 clove Sun add-on', '1 head', 1, 0.58, 'head', 'E', 'r', ''],
+      ['Garlic', '12 g = 4 cloves (lunch prep)', '1 head', 1, 0.58, 'head', 'E', 'r', ''],
       ['Lemon', '15 g juice = 1 tbsp (Thu cod) + squeeze for Sat tuna', '1 lemon', 1, 0.68, 'each', 'E', '', ''],
       ['Romaine', '30 g (Wed tacos)', '1 romaine heart', 1, 1.25, 'heart', 'E', '', ''],
       ['Tomato', '30 g (Wed tacos)', '1 Roma tomato', 1, 0.30, 'each', 'E', '', ''],
       ['Cucumber', '160 g (Mon + Sun snack boxes)', '1 cucumber', 1, 0.78, 'each', 'E', '', ''],
       ['Baby carrots', '200 g (snack boxes + Tue fried rice)', '1 × 1-lb bag', 1, 1.28, '1-lb bag', 'E', 'r', ''],
       ['Baby spinach', '150 g (egg bites + penne lunches)', '1 × 6–10 oz bag', 1, 2.98, 'bag', 'E', '', ''],
-      ['Red potatoes', '230 g (Sat pork) + 220 g for the Sun Nov 1 add-on', '1 × 1.5-lb bag (covers both)', 1, 2.97, '1.5-lb bag', 'E', '', '']
+      ['Red potatoes', '230 g (Sat pork)', '1 × 1.5-lb bag', 1, 2.97, '1.5-lb bag', 'E', '', '']
     ]],
     ['Meat & Seafood', [
-      ['Chicken breast, boneless skinless', '440 g ≈ 1 lb (3 penne lunches + Fri BBQ chicken)', '~1 lb', 1, 2.57, 'lb', 'W', 'f', 'Freeze the Fri Nov 6 piece'],
+      ['Chicken breast, boneless skinless', '440 g ≈ 1 lb (3 penne lunches + Fri BBQ chicken)', '~1 lb', 1, 2.57, 'lb', 'W', 'f', 'Freeze the Fri Nov 13 piece'],
       ['Ground beef 93/7', '540 g ≈ 1.2 lb (4 lunches 110 g each + Wed tacos 100 g)', '2 × 1-lb packs (freeze the extra)', 2, 7.87, '1-lb pack', 'W', 'fr', 'If ~250 g of Trip 1 beef is in the freezer, 1 pack is enough'],
-      ['Ground turkey 93/7', '130 g (Sun Nov 8 chili)', '1 × 1-lb pack (freeze the rest)', 1, 4.93, 'lb', 'W', 'fr', 'Trip 1 plan reserved 130 g in the freezer for this chili'],
+      ['Ground turkey 93/7', '130 g (Sun Nov 15 chili)', '1 × 1-lb pack (freeze the rest)', 1, 4.93, 'lb', 'W', 'fr', 'Trip 1 plan reserved 130 g in the freezer for this chili'],
       ['Shrimp, raw, peeled & deveined (frozen)', '115 g ≈ 4 oz (Tue fried rice)', '1 × 12-oz frozen bag', 1, 7.42, '12-oz bag', 'W', 'fr', 'The Trip 1 1-lb bag would still have ~11 oz'],
-      ['Top sirloin steak', '125 g ≈ 4.4 oz (Mon Nov 2)', '1 small steak (~8–12 oz; cut and freeze the rest)', 0.75, 12.94, 'lb', 'W', '', ''],
-      ['Cod fillet', '170 g = 6 oz (Thu Nov 5)', '1 fillet, or individually frozen fillets (Walmart 2-lb bag ≈ $14.46)', 0.375, 11.99, 'lb', 'E', 'f', 'Bought Fri/Sat, it’s 5–6 days out: freeze it'],
-      ['Pork tenderloin', '145 g ≈ 5 oz (Sat Nov 7)', '1 plain, unseasoned tenderloin; cut 145 g, freeze the rest', 1.1, 4.46, 'lb', 'W', 'f', ''],
+      ['Top sirloin steak', '125 g ≈ 4.4 oz (Mon Nov 9)', '1 small steak (~8–12 oz; cut and freeze the rest)', 0.75, 12.94, 'lb', 'W', '', ''],
+      ['Cod fillet', '170 g = 6 oz (Thu Nov 12)', '1 fillet, or individually frozen fillets (Walmart 2-lb bag ≈ $14.46)', 0.375, 11.99, 'lb', 'E', 'f', 'Bought Fri/Sat, it’s 5–6 days out: freeze it'],
+      ['Pork tenderloin', '145 g ≈ 5 oz (Sat Nov 14)', '1 plain, unseasoned tenderloin; cut 145 g, freeze the rest', 1.1, 4.46, 'lb', 'W', 'f', ''],
       ['Sliced deli turkey breast', '84 g ≈ 3 oz (Wed roll-ups)', '~3 oz from the deli counter', 3, 0.397, 'oz', 'W', '', '']
     ]],
     ['Dairy & Eggs', [
@@ -254,7 +254,7 @@
     ]],
     ['Bakery / Bread', [
       ['Plain bagels', '3 (Tue, Thu, Sat breakfasts)', '1 × 6-pack (freeze extras)', 1, 2.48, '6-pack', 'E', '', ''],
-      ['Flour tortillas, 6-inch', '3 (Wed Nov 4 tacos)', '1 pack (street-taco size)', 1, 2.48, 'pack', 'E', '', ''],
+      ['Flour tortillas, 6-inch', '3 (Wed Nov 11 tacos)', '1 pack (street-taco size)', 1, 2.48, 'pack', 'E', '', ''],
       ['Whole-wheat bread', '6 slices (PB&J + PB toast)', '1 × 20-oz loaf', 1, 1.98, 'loaf', 'E', 'r', 'The plan froze half the Trip 1 loaf for Week B'],
       ['Pita, 6.5-inch', '2 (Mon + Sun snack boxes)', '1 pack', 1, 2.98, 'pack', 'E', 'r', 'Trip 1 pack extras may be in the freezer']
     ]],
@@ -305,72 +305,170 @@
       ['Gallon freezer bags', 'Thu–Sun portions go to the freezer', '1 box', 1, 3.48, 'box', 'E', 'sr', '']
     ]]
   ];
-  // Sun Nov 1 dinner is still Week A: D7 Sheet-Pan Lemon Herb Chicken Thighs & Potatoes (150 g thighs, 220 g red potatoes, 100 g green beans, 1 tbsp oil, 1 tbsp lemon, 1 garlic clove, oregano, rosemary)
-  const ADDON = [
-    ['Chicken thighs, boneless skinless', '150 g ≈ 5.3 oz', '1 small pack (freeze the extra) or 2 thighs from the Publix counter', 1.75, 3.92, 'lb', 'W', 'f', ''],
-    ['Lemon (extra)', '1 tbsp juice', '1 lemon', 1, 0.68, 'each', 'E', '', ''],
-    ['Dried oregano', '1/2 tsp', '1 jar (skip if you have it)', 1, 1.28, 'jar', 'E', 's', ''],
-    ['Dried rosemary', '1/2 tsp', '1 jar (skip if you have it)', 1, 1.48, 'jar', 'E', 's', '']
+  // ---------- Week A shop (for Sun Nov 1 prep) ----------
+  // Computed from data.js WEEKS.A (Mon Nov 2 – Sun Nov 8): every breakfast, snack, lunch, pre-workout, post-workout, dinner and evening snack,
+  // through the Sun Nov 8 sheet-pan chicken thighs. Same item format and flags as WB.
+  const WA = [
+    ['Produce', [
+      ['Bananas', '1,062 g ≈ 9 (shakes, pre-workout, snacks, yogurt bowls)', '9 bananas (some green; they’re eaten through Sun Nov 8)', 9, 0.25, 'each', 'W', '', ''],
+      ['Apples', '2 medium (Tue + Sun snack)', '2 apples', 2, 0.80, 'each', 'E', '', ''],
+      ['Blueberries', '225 g ≈ 1 1/2 cups (Mon, Wed, Sat yogurt)', '1 pint', 1, 2.97, 'pint', 'W', '', ''],
+      ['Strawberries', '200 g (Tue + Fri cottage cheese)', '1 lb clamshell', 1, 2.67, '1-lb box', 'W', '', ''],
+      ['Grapes', '150 g ≈ 1 cup (Fri tuna snack)', '~1/2 lb', 0.5, 2.48, 'lb', 'E', '', ''],
+      ['Pineapple chunks', '330 g ≈ 2 cups (Sat + Sun)', '1 × 16-oz cut-pineapple tub (or 1 × 20-oz can in juice)', 1, 4.48, '16-oz tub', 'E', '', ''],
+      ['Broccoli florets', '560 g (4 teriyaki lunches, Thu salmon, Fri stir-fry)', '2 × 12-oz bags', 2, 2.47, '12-oz bag', 'W', '', ''],
+      ['Asparagus', '100 g ≈ 6–7 spears (Mon shrimp)', '1 small bunch', 1, 2.98, 'bunch', 'E', '', ''],
+      ['Green beans', '100 g (Sun Nov 8 thighs); tonight’s thighs use another 100 g', '1 × 12-oz bag (covers both)', 1, 2.48, '12-oz bag', 'E', 'r', ''],
+      ['Bell pepper', '160 g (Tue fajitas, Fri stir-fry)', '1 large pepper', 1, 0.98, 'each', 'E', '', ''],
+      ['Yellow onion', '80 g (Tue fajitas, Wed meat sauce)', '1 medium', 1, 0.75, 'each', 'E', 'r', ''],
+      ['Garlic', '15 g ≈ 5 cloves (dinners)', '1 head', 1, 0.58, 'head', 'E', 'r', ''],
+      ['Lemons', '30 g juice = 2 tbsp (Mon shrimp, Sun Nov 8 thighs) + squeeze for Fri tuna', '2 lemons', 2, 0.68, 'each', 'E', 'r', ''],
+      ['Romaine', '20 g = 1 leaf (Sat burger)', '1 romaine heart', 1, 1.25, 'heart', 'E', '', ''],
+      ['Tomato', '20 g = 1 slice (Sat burger)', '1 Roma tomato', 1, 0.30, 'each', 'E', '', ''],
+      ['Cucumber', '80 g (Wed snack box)', '1 cucumber', 1, 0.78, 'each', 'E', '', ''],
+      ['Baby carrots', '80 g (Wed snack box)', '1 × 1-lb bag', 1, 1.28, '1-lb bag', 'E', 'r', ''],
+      ['Russet potato', '150 g (Sat oven fries)', '1 small russet', 1, 0.50, 'each', 'E', '', ''],
+      ['Red potatoes', '220 g (Sun Nov 8 thighs); tonight’s thighs use another 220 g', '1 × 1.5-lb bag (covers both)', 1, 2.97, '1.5-lb bag', 'E', 'r', '']
+    ]],
+    ['Meat & Seafood', [
+      ['Chicken breast, boneless skinless', '695 g ≈ 1.5 lb (4 teriyaki lunches, Tue fajitas, Fri stir-fry)', '~1.6 lb', 1.6, 2.57, 'lb', 'W', 'f', 'Freeze the Fri Nov 6 piece'],
+      ['Chicken thighs, boneless skinless', '150 g (Sun Nov 8 dinner)', '1 small pack (freeze the extra) or 2 thighs from the counter', 1.75, 3.92, 'lb', 'W', 'fr', 'Tonight’s pack should have a spare thigh for Nov 8: freeze it'],
+      ['Ground turkey 93/7', '330 g (3 turkey taco lunches)', '1 × 1-lb pack (a 1.25-lb pack also covers the 130 g Week B chili)', 1, 4.93, 'lb', 'W', 'r', ''],
+      ['Ground beef 93/7', '220 g (Wed meat sauce 100 g, Sat burger 120 g)', '1 × 1-lb pack (freeze the extra)', 1, 7.87, '1-lb pack', 'W', 'fr', ''],
+      ['Shrimp, raw, peeled & deveined (frozen)', '140 g ≈ 5 oz (Mon garlic butter shrimp)', '1 × 12-oz frozen bag', 1, 7.42, '12-oz bag', 'W', 'fr', ''],
+      ['Salmon fillet', '125 g ≈ 4.4 oz (Thu Nov 5)', '1 fillet (4–6 oz), or individually frozen fillets', 0.33, 10.64, 'lb', 'W', 'f', 'Fresh lasts 1–2 days: freeze it until Wed night'],
+      ['Sliced deli turkey breast', '252 g ≈ 9 oz (muffin sandwiches + Tue/Sun roll-ups)', '~9 oz (one 9-oz tub or deli counter)', 9, 0.397, 'oz', 'W', '', '']
+    ]],
+    ['Dairy & Eggs', [
+      ['Large eggs', '16 eggs (burritos, muffin sandwiches, 2 hard-boiled)', '1 × 18-ct carton', 1, 2.47, '18-ct', 'W', '', ''],
+      ['Liquid egg whites', '240 g = 1 cup (burritos)', '1 × 16-oz carton', 1, 2.20, '16 oz', 'W', '', ''],
+      ['Cheddar, shredded', '126 g ≈ 4.5 oz (burritos, taco bowls)', '1 × 8-oz bag', 1, 1.97, '8-oz bag', 'W', 'r', ''],
+      ['Cheddar, sliced', '77 g ≈ 4 slices (muffin sandwiches, burger)', '1 small pack', 1, 2.27, 'pack', 'E', '', ''],
+      ['String cheese', '3 sticks (Tue, Sat, Sun snacks)', '1 pack', 1, 3.28, '12-ct', 'W', 'r', ''],
+      ['Plain 2% Greek yogurt', '750 g (Mon, Wed, Sat yogurt bowls)', '1 × 32-oz tub', 1, 6.96, '32 oz', 'W', '', ''],
+      ['Plain nonfat Greek yogurt', '730 g (PB&J snacks, fajitas, PB-banana bowls)', '1 × 32-oz tub', 1, 3.28, '32 oz', 'W', '', ''],
+      ['2% cottage cheese', '850 g (Tue/Fri evening + Sat/Sun afternoon)', '2 × 16-oz tubs', 2, 2.17, '16 oz', 'E', '', ''],
+      ['2% milk', '600 g ≈ 2 1/2 cups (Mon + Thu shakes)', '1 quart', 1, 1.48, 'quart', 'E', '', ''],
+      ['Low-fat chocolate milk', '2 cups (Wed + Fri post-workout)', '1 quart', 1, 1.68, 'quart', 'E', '', ''],
+      ['Hummus (plain)', '60 g = 1/4 cup (Wed snack box)', '1 × 8–10 oz tub', 1, 3.97, '10-oz tub', 'W', 'r', ''],
+      ['Butter', '10 g = 2 tsp (Mon shrimp)', '1 lb', 1, 3.97, '1 lb', 'E', 'sr', ''],
+      ['Grated parmesan', '5 g = 1 tbsp (Wed spaghetti)', '1 × 8-oz shaker', 1, 2.98, '8 oz', 'E', 'sr', '']
+    ]],
+    ['Bakery / Bread', [
+      ['Flour tortillas, 10-inch burrito size', '4 (breakfast burritos)', '1 pack (8; freeze the rest)', 1, 3.48, '8-ct', 'W', '', ''],
+      ['Flour tortillas, 8-inch', '2 (Tue fajitas)', '1 pack', 1, 2.98, 'pack', 'E', '', ''],
+      ['English muffins', '6 (muffin sandwiches)', '1 × 6-pack', 1, 1.48, '6-pack', 'E', '', ''],
+      ['Whole-wheat bread', '8 slices (PB&J + PB toast)', '1 × 20-oz loaf (freeze half for Week B)', 1, 1.98, 'loaf', 'E', 'r', ''],
+      ['Hamburger bun', '1 (Sat burger)', '1 pack (freeze the rest) or 1 bakery bun', 1, 1.48, '8-pack', 'E', '', ''],
+      ['Pita, 6.5-inch', '1 (Wed snack box)', '1 pack (freeze the rest for Week B)', 1, 2.98, 'pack', 'E', 'r', '']
+    ]],
+    ['Pantry / Dry goods', [
+      ['Peanut butter', '176 g ≈ 11 tbsp', '1 × 16-oz jar', 1, 1.98, '16 oz', 'W', 'r', ''],
+      ['Plain rice cakes', '12 cakes (pre-workout + Fri tuna)', '1 pack (~14)', 1, 3.64, 'pack', 'W', 'r', ''],
+      ['Pretzels', '112 g ≈ 4 oz', '1 × 16-oz bag', 1, 2.48, '16-oz bag', 'E', 'r', ''],
+      ['Beef jerky', '28 g = 1 oz (Sat snack)', '1 small bag', 1, 5.98, 'bag', 'E', 'r', ''],
+      ['Honey', '112 g ≈ 5 tbsp', '1 × 12-oz bottle', 1, 3.74, '12 oz', 'W', 'r', ''],
+      ['Long-grain white rice', '735 g ≈ 1.6 lb dry (lunches + 3 dinners)', '1 × 5-lb bag', 1, 3.52, '5-lb bag', 'W', 'sr', ''],
+      ['Spaghetti', '90 g (Wed Nov 4)', '1 × 1-lb box', 1, 1.18, '1 lb', 'E', 'sr', ''],
+      ['Cornstarch', '3 g = 1 tsp (Fri stir-fry)', '1 box', 1, 1.68, 'box', 'E', 'sr', ''],
+      ['Almonds', '42 g ≈ 36 almonds', '1 small bag', 1, 3.98, 'bag', 'E', 'sr', ''],
+      ['Cashews', '28 g = 1/4 cup', '1 small bag', 1, 4.48, 'bag', 'E', 'sr', ''],
+      ['Strawberry jam', '60 g = 3 tbsp', '1 jar', 1, 2.48, 'jar', 'E', 'sr', ''],
+      ['Whey protein powder', '70 g ≈ 2–3 scoops', '1 × 2-lb tub (skip if you have some)', 1, 24.98, '2-lb tub', 'E', 'sor', '']
+    ]],
+    ['Canned & Jarred', [
+      ['Black beans', '340 g drained (burritos + taco bowls)', '2 × 15-oz cans', 2, 0.92, '15-oz can', 'W', 'r', ''],
+      ['Marinara sauce', '150 g = 2/3 cup (Wed spaghetti)', '1 × 24-oz jar', 1, 1.68, '24-oz jar', 'W', 'r', 'Only an unopened jar'],
+      ['Salsa', '240 g ≈ 1 cup (burritos, taco bowls, fajitas)', '1 × 16-oz jar', 1, 2.48, '16-oz jar', 'E', 'r', ''],
+      ['Light tuna in water', '1 × 5-oz can (Fri snack)', '1 can', 1, 1.08, '5-oz can', 'E', 'r', ''],
+      ['Light mayonnaise', '1 tbsp', '1 small jar', 1, 3.48, 'jar', 'E', 'sr', '']
+    ]],
+    ['Spices, Condiments & Sauces', [
+      ['Taco seasoning', '16 g ≈ 5 1/2 tsp (taco bowls, fajitas)', '1 × 1-oz packet', 1, 0.78, 'packet', 'E', 'r', ''],
+      ['Teriyaki sauce', '162 g ≈ 9 tbsp (lunches, Thu salmon)', '1 × 10-oz bottle', 1, 2.98, '10 oz', 'E', 'sr', ''],
+      ['Olive oil', '52 g ≈ 4 tbsp', '1 × 16.9-oz bottle', 1, 6.12, '17 oz', 'W', 'sr', ''],
+      ['Cooking spray', 'burritos and pans', '1 can', 1, 2.48, 'can', 'E', 'sr', ''],
+      ['Soy sauce, low sodium', '16 g = 1 tbsp (Fri stir-fry)', '1 × 10-oz bottle', 1, 2.48, '10 oz', 'E', 'sr', ''],
+      ['Garlic powder', 'teriyaki chicken, oven fries', '1 jar', 1, 1.28, 'jar', 'E', 'sr', ''],
+      ['Dried oregano + rosemary', '1/2 tsp each (Sun Nov 8 thighs)', '1 jar each', 1, 2.76, 'pair', 'E', 'sr', ''],
+      ['Salt + black pepper', 'throughout', '1 salt + 1 pepper', 1, 3.00, 'pair', 'E', 'sr', ''],
+      ['Optional: yellow mustard + ketchup (Sat burger)', '', 'only if you want them (not priced)', 0, 0, '', 'E', 'o', '']
+    ]],
+    ['Frozen', [
+      ['Frozen sweet corn', '120 g ≈ 3/4 cup (taco bowls)', '1 × 12–16 oz bag', 1, 1.28, 'bag', 'E', 'sr', '']
+    ]],
+    ['Prep supplies', [
+      ['Parchment paper', 'teriyaki chicken, oven fries, sheet pan', '1 roll', 1, 3.48, 'roll', 'E', 'sr', ''],
+      ['Aluminum foil', 'burritos, Thu salmon', '1 roll', 1, 3.98, 'roll', 'E', 'sr', ''],
+      ['Gallon freezer bags', 'burritos + muffin sandwiches, Thu–Sun portions', '1 box', 1, 3.48, 'box', 'E', 'sr', '']
+    ]]
   ];
-  const WKEY = 'lb.groceryWeekB';
-  const loadW = () => { try { const v = JSON.parse(localStorage.getItem(WKEY)); return v && typeof v === 'object' ? v : {}; } catch (e) { return {}; } };
-  G.wb = loadW();
-  const saveW = () => { try { localStorage.setItem(WKEY, JSON.stringify(G.wb)); } catch (e) { /* storage blocked */ } };
+  const WKEY = 'lb.groceryWeekB', AKEY = 'lb.groceryWeekA';
+  const loadK = (k) => { try { const v = JSON.parse(localStorage.getItem(k)); return v && typeof v === 'object' ? v : {}; } catch (e) { return {}; } };
+  G.wb = loadK(WKEY); G.wa = loadK(AKEY);
+  const saveK = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } };
+  const saveW = () => saveK(WKEY, G.wb), saveA = () => saveK(AKEY, G.wa);
   const wLine = (it) => r2(it[3] * it[4]);
-  function wbTotals() {
-    const t = { trip: 0, staple: 0, opt: 0, addon: 0, look: 0, est: 0 };
-    WB.forEach((s) => s[1].forEach((it) => {
+  function shopTotals(list) {
+    const t = { trip: 0, staple: 0, opt: 0, look: 0, est: 0 };
+    list.forEach((s) => s[1].forEach((it) => {
       const v = wLine(it);
       if (it[7].indexOf('o') >= 0) { t.opt += v; return; }
       if (it[7].indexOf('s') >= 0) t.staple += v; else t.trip += v;
       if (it[6] === 'W') t.look++; else t.est++;
     }));
-    ADDON.forEach((it) => { t.addon += wLine(it); });
-    t.trip = r2(t.trip); t.staple = r2(t.staple); t.addon = r2(t.addon); t.grand = r2(t.trip + t.staple); t.withAddon = r2(t.grand + t.addon);
+    t.trip = r2(t.trip); t.staple = r2(t.staple); t.grand = r2(t.trip + t.staple);
     return t;
   }
-  function wbRow(it, id) {
-    const on = !!G.wb[id], fl = it[7];
+  const wbTotals = () => shopTotals(WB), waTotals = () => shopTotals(WA);
+  function shopRow(it, id, map, act, week) {
+    const on = !!map[id], fl = it[7];
     const marks = (fl.indexOf('f') >= 0 ? ' ❄️' : '') + (fl.indexOf('s') >= 0 ? ' 🧂' : '');
-    const price = '<div class="gl-p">' + money(it[4]) + '<span class="muted"> /' + esc(it[5]) + '</span></div><div class="muted">×' + qtyTxt(it[3]) + ' = <b class="gl-line">' + money(wLine(it)) + '</b></div><div class="gl-src ' + (it[6] === 'W' ? 'good' : 'warn') + '">' + (it[6] === 'W' ? 'Walmart.com' : 'est.') + '</div>';
-    return '<div class="gl-item' + (on ? ' done' : '') + '"><label class="gl-chk"><input type="checkbox" data-gl="wbchk" data-id="' + esc(id) + '"' + (on ? ' checked' : '') + '></label>' +
-      '<div class="gl-main"><div class="gl-name">' + esc(it[0]) + marks + (fl.indexOf('o') >= 0 ? ' <span class="muted">(optional, not in totals)</span>' : '') + '</div>' +
-      '<div class="small">Buy: ' + esc(it[2]) + '</div><div class="muted">Week B uses: ' + esc(it[1]) + '</div>' +
+    const price = it[4] > 0 ? '<div class="gl-p">' + money(it[4]) + '<span class="muted"> /' + esc(it[5]) + '</span></div><div class="muted">×' + qtyTxt(it[3]) + ' = <b class="gl-line">' + money(wLine(it)) + '</b></div><div class="gl-src ' + (it[6] === 'W' ? 'good' : 'warn') + '">' + (it[6] === 'W' ? 'Walmart.com' : 'est.') + '</div>' : '<div class="muted">not priced</div>';
+    return '<div class="gl-item' + (on ? ' done' : '') + '"><label class="gl-chk"><input type="checkbox" data-gl="' + act + '" data-id="' + esc(id) + '"' + (on ? ' checked' : '') + '></label>' +
+      '<div class="gl-main"><div class="gl-name">' + esc(it[0]) + marks + (fl.indexOf('o') >= 0 && it[4] > 0 ? ' <span class="muted">(optional, not in totals)</span>' : '') + '</div>' +
+      '<div class="small">Buy: ' + esc(it[2]) + '</div>' + (it[1] ? '<div class="muted">Week ' + week + ' uses: ' + esc(it[1]) + '</div>' : '') +
       (fl.indexOf('r') >= 0 ? '<div class="small warn">Check your pantry/freezer first' + (it[8] ? ': ' + esc(it[8]) : '') + '</div>' : (it[8] ? '<div class="muted">' + esc(it[8]) + '</div>' : '')) +
       '</div><div class="gl-price">' + price + '</div></div>';
   }
-  function htmlWB() {
-    const t = wbTotals();
+  function shopView(V) {
+    const t = shopTotals(V.list);
     let h = '<div class="card"><div class="row" style="justify-content:space-between;align-items:center"><button data-gl="back">‹ Back to meal plan</button><button data-gl="reset">Reset checkboxes</button></div>';
-    h += '<h2 style="margin-top:12px">Week B shop (for Sun Nov 1 prep)</h2><div class="small">Everything for Week B, Mon Nov 2 – Sun Nov 8: all breakfasts, snacks, lunches, pre/post-workout and dinners, through the Sun Nov 8 turkey chili. Quantities come from the Week B recipes in the plan. Shop Fri Oct 30 or Sat Oct 31, prep Sunday Nov 1. Supplements aren’t included.</div>';
-    h += '<div class="muted" style="margin-top:6px">❄️ = freeze when you get home (eaten late in the week) · 🧂 = pantry staple · <span class="warn">Check your pantry/freezer first</span> = may be left over from Trip 1, if you did it</div>';
+    h += '<h2 style="margin-top:12px">' + esc(V.title) + '</h2><div class="small">' + V.intro + '</div>';
+    h += '<div class="muted" style="margin-top:6px">❄️ = freeze when you get home (eaten late in the week) · 🧂 = pantry staple, skip if you still have it · <span class="warn">Check your pantry/freezer first</span> = ' + V.checkWhy + '</div>';
     h += chipRow() + '</div>';
-    h += '<div class="card small"><b>Fri/Sat shopping tip:</b> Publix Lake Nona Plaza (0.3 mi from Concorde, 7 AM–10 PM) covers all of Week B in one stop, including counter cuts of one sirloin, 6 oz cod and a small pork tenderloin, and 3 oz of deli turkey. Walmart Supercenter on Narcoossee (2.4 mi, 6 AM–11 PM) is the cheapest one-stop. ALDI closes at 8 PM. Hours are the stores’ regular hours; check the store page before a late run.</div>';
-    WB.forEach((s, si) => {
+    h += '<div class="card small">' + V.tip + '</div>';
+    V.list.forEach((s, si) => {
       const sub = r2(s[1].reduce((a, it) => a + (it[7].indexOf('o') >= 0 ? 0 : wLine(it)), 0));
-      h += '<h2>' + esc(s[0]) + ' <span class="muted">' + money(sub) + '</span></h2><div class="card gl-list">' + s[1].map((it, ii) => wbRow(it, 'wb.' + si + '.' + ii)).join('') + '</div>';
+      h += '<h2>' + esc(s[0]) + ' <span class="muted">' + money(sub) + '</span></h2><div class="card gl-list">' + s[1].map((it, ii) => shopRow(it, V.prefix + '.' + si + '.' + ii, V.map, V.act, V.week)).join('') + '</div>';
     });
-    h += '<h2>Sun Nov 1 dinner add-on <span class="muted">' + money(t.addon) + '</span></h2><div class="card"><div class="small">Sunday’s dinner is still Week A: Sheet-Pan Lemon Herb Chicken Thighs & Potatoes. If you didn’t do Trip 1 as planned, make sure you have these too. The 220 g red potatoes, 100 g green beans, garlic clove and 1 tbsp olive oil are covered by the Week B bags above.</div><div class="gl-list" style="padding:0">' + ADDON.map((it, ii) => wbRow(it, 'add.' + ii)).join('') + '</div></div>';
-    h += '<div class="card gl-tot"><h3 style="margin-top:0">Estimated cost · Week B shop</h3><table class="tbl">' +
-      '<tr><td>Week B groceries</td><td><b>' + money(t.trip) + '</b></td></tr>' +
-      '<tr><td>Pantry staples 🧂 <div class="muted">skip if you still have them from Trip 1</div></td><td><b>' + money(t.staple) + '</b></td></tr>' +
-      '<tr><td><b>Week B total</b></td><td><b>' + money(t.grand) + '</b></td></tr>' +
-      '<tr><td>+ Sun Nov 1 add-on</td><td>' + money(t.addon) + '</td></tr>' +
-      '<tr><td>Week B total with add-on</td><td>' + money(t.withAddon) + '</td></tr></table>' +
+    if (V.extra) h += V.extra;
+    h += '<div class="card gl-tot"><h3 style="margin-top:0">Estimated cost · ' + esc(V.short) + '</h3><table class="tbl">' +
+      '<tr><td>Week ' + V.week + ' groceries</td><td><b>' + money(t.trip) + '</b></td></tr>' +
+      '<tr><td>Pantry staples 🧂 <div class="muted">skip if you still have them</div></td><td><b>' + money(t.staple) + '</b></td></tr>' +
+      '<tr><td><b>Week ' + V.week + ' total</b></td><td><b>' + money(t.grand) + '</b></td></tr></table>' +
       '<div class="muted" style="margin-top:6px">Items marked “check your pantry/freezer first” are still counted, since you may not have them. Whey (~$24.98, optional) isn’t included.</div>' +
       '<div class="small warn" style="margin-top:8px">Prices are estimates. They vary by store and week, and items sold by weight (meat, fish, deli, bananas, grapes) settle at the register. Prices checked Oct 2026.</div>' +
       '<div class="muted" style="margin-top:4px">“Walmart.com” = listed price looked up Oct 2026 (Walmart #4365 on Narcoossee, 2.4 mi from Concorde; in-store can differ). “est.” = typical Lake Nona price where no lookup was possible. Publix and Sprouts usually run 10–25% higher, ALDI a bit lower. ' + t.look + ' prices looked up, ' + t.est + ' estimated.</div></div>';
     return h + storesHtml();
   }
+  const htmlWA = () => shopView({ list: WA, prefix: 'wa', map: G.wa, act: 'wachk', week: 'A', short: 'Week A shop', title: 'Week A shop (for Sun Nov 1 prep)',
+    intro: 'Everything for Week A, Mon Nov 2 – Sun Nov 8: all breakfasts, snacks, lunches, pre/post-workout and dinners, through the Sun Nov 8 sheet-pan chicken thighs. Quantities come from the Week A recipes in the plan. Prep today, Sun Nov 1. Tonight’s dinner (sheet-pan thighs) is covered by the thigh pack, green-bean bag, potato bag and lemons below. Supplements aren’t included.',
+    checkWhy: 'you may already have it from the Fri/Sat shop or earlier',
+    tip: '<b>Shopping tip:</b> Publix Lake Nona Plaza (0.3 mi from Concorde, 7 AM–10 PM) covers all of Week A in one stop, including a single salmon fillet from the seafood counter and 9 oz of deli turkey sliced to order. Walmart Supercenter on Narcoossee (2.4 mi, 6 AM–11 PM) is the cheapest one-stop. ALDI closes at 8 PM and Bravo at 8 PM on Sundays. Hours are the stores’ regular hours; check the store page before a late run.' });
+  const htmlWB = () => shopView({ list: WB, prefix: 'wb', map: G.wb, act: 'wbchk', week: 'B', short: 'Week B shop', title: 'Week B shop (Nov 9–15, prep Sun Nov 8)',
+    intro: 'Everything for Week B, Mon Nov 9 – Sun Nov 15: all breakfasts, snacks, lunches, pre/post-workout and dinners, through the Sun Nov 15 turkey chili. Quantities come from the Week B recipes in the plan. Shop Fri Nov 6 or Sat Nov 7, prep Sun Nov 8. Sun Nov 8’s dinner (sheet-pan thighs) is part of the Week A shop. Supplements aren’t included.',
+    checkWhy: 'may be left over from the Week A shop',
+    tip: '<b>Fri/Sat shopping tip:</b> Publix Lake Nona Plaza (0.3 mi from Concorde, 7 AM–10 PM) covers all of Week B in one stop, including counter cuts of one sirloin, 6 oz cod and a small pork tenderloin, and 3 oz of deli turkey. Walmart Supercenter on Narcoossee (2.4 mi, 6 AM–11 PM) is the cheapest one-stop. ALDI closes at 8 PM. Hours are the stores’ regular hours; check the store page before a late run.' });
 
-  function html() { return G.trip === 'wb' ? htmlWB() : htmlBi(); }
+  function html() { return G.trip === 'wa' ? htmlWA() : G.trip === 'wb' ? htmlWB() : htmlBi(); }
 
   function htmlBi() {
     const t = totals(G.trip), all = totals('all'), t1 = totals('t1'), t2 = totals('t2');
     const label = G.trip === 't1' ? 'Trip 1' : G.trip === 't2' ? 'Trip 2' : 'Both trips';
     let h = '<div class="card"><div class="row" style="justify-content:space-between;align-items:center"><button data-gl="back">‹ Back to meal plan</button><button data-gl="reset">Reset checkboxes</button></div>';
-    h += '<h2 style="margin-top:12px">Two-week grocery list</h2><div class="small">Week A (Mon Oct 26) + Week B (Mon Nov 2), 1 person. Totals come from every meal, snack, Sunday prep and dinner in the plan. Supplements aren’t included.</div>';
-    h += '<div class="small" style="margin-top:6px"><b>Trip 1</b> (Sat Oct 24 / Sun Oct 25, before Week A prep) · <b>Trip 2</b> (Sat Oct 31 / Sun Nov 1, before Week B prep). Shopping once? Buy it all on Trip 1, freeze the ❄️ meat and fish in single-meal portions, and buy Trip 2 produce and dairy fresh in week 2.</div>';
+    h += '<h2 style="margin-top:12px">Two-week grocery list</h2><div class="small">Week A (Mon Nov 2) + Week B (Mon Nov 9), 1 person. Totals come from every meal, snack, Sunday prep and dinner in the plan. Supplements aren’t included.</div>';
+    h += '<div class="small" style="margin-top:6px"><b>Trip 1</b> (Sat Oct 31 / Sun Nov 1, before Week A prep) · <b>Trip 2</b> (Sat Nov 7 / Sun Nov 8, before Week B prep). Shopping once? Buy it all on Trip 1, freeze the ❄️ meat and fish in single-meal portions, and buy Trip 2 produce and dairy fresh in week 2.</div>';
     h += '<div class="muted" style="margin-top:6px">❄️ = freeze if you buy early · 🧂 = pantry staple that lasts past two weeks (one-time buy)</div>';
     h += chipRow() + '</div>';
 
@@ -426,15 +524,15 @@
     const a = el.dataset.gl;
     if (a === 'back') { show(false); window.scrollTo(0, 0); }
     else if (a === 'trip') { G.trip = el.dataset.v; render(); }
-    else if (a === 'reset') { if (window.confirm(G.trip === 'wb' ? 'Uncheck every item on the Week B list?' : 'Uncheck every item on the two-week list?')) { if (G.trip === 'wb') { G.wb = {}; saveW(); } else { G.checks = {}; saveChecks(); } render(); } }
+    else if (a === 'reset') { const nm = G.trip === 'wa' ? 'Week A' : G.trip === 'wb' ? 'Week B' : 'two-week'; if (window.confirm('Uncheck every item on the ' + nm + ' list?')) { if (G.trip === 'wa') { G.wa = {}; saveA(); } else if (G.trip === 'wb') { G.wb = {}; saveW(); } else { G.checks = {}; saveChecks(); } render(); } }
   });
   sec.addEventListener('change', (e) => {
-    const el = e.target, k = el.dataset.gl; if (k !== 'chk' && k !== 'wbchk') return;
-    const store = k === 'wbchk' ? G.wb : G.checks;
+    const el = e.target, k = el.dataset.gl; if (k !== 'chk' && k !== 'wbchk' && k !== 'wachk') return;
+    const store = k === 'wachk' ? G.wa : k === 'wbchk' ? G.wb : G.checks;
     if (el.checked) store[el.dataset.id] = 1; else delete store[el.dataset.id];
-    if (k === 'wbchk') saveW(); else saveChecks();
+    if (k === 'wachk') saveA(); else if (k === 'wbchk') saveW(); else saveChecks();
     el.closest('.gl-item').classList.toggle('done', el.checked);
   });
   if (location.hash === '#grocery') show(true, true);
-  window.LB_GROCERY = { totals: totals, SECTIONS: SECTIONS, wbTotals: wbTotals, WB: WB, ADDON: ADDON };
+  window.LB_GROCERY = { totals: totals, SECTIONS: SECTIONS, wbTotals: wbTotals, WB: WB, waTotals: waTotals, WA: WA };
 })();

@@ -34,7 +34,7 @@
   const DEF_TIMES = { wake: '06:00', breakfast: '06:30', snack: '09:30', lunch: '12:30', pre: '16:30', wStart: '18:00', wEnd: '19:30', dinner: '20:15', evening: '22:00' };
   const TIME_LABELS = { wake: 'Wake', breakfast: 'Breakfast', snack: 'AM snack', lunch: 'Lunch', pre: 'Pre-workout', wStart: 'Workout start', wEnd: 'Workout end', dinner: 'Dinner', evening: 'Evening snack' };
   const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-  const DEF_ANCHOR = '2026-10-26';
+  const DEF_ANCHOR = '2026-11-02';
 
   const load = (k, d) => { try { const v = localStorage.getItem('lb.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } };
   const save = (k, v) => { try { localStorage.setItem('lb.' + k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } };
@@ -48,6 +48,11 @@
     checkins: load('checkins', []),
     tab: 'today', open: '', portion: {}, custom: {}, im: {}, glance: null, shopWeek: 'A', week: null, day: null, logDate: null
   };
+  // One-time migration (plan reset Nov 1 2026): move the old default anchor to the new Week A start.
+  if (!load('mig_anchor_1102', false)) {
+    if (S.anchor === '2026-10-26') { S.anchor = DEF_ANCHOR; save('anchor', S.anchor); }
+    save('mig_anchor_1102', true);
+  }
   const persist = () => { ['targets', 'times', 'anchor', 'logs', 'weights', 'swaps', 'checkins'].forEach((k) => save(k, S[k])); };
 
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
