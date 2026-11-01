@@ -76,6 +76,7 @@
   const rotation = (iso) => {
     const d = parseIso(iso), a = parseIso(S.anchor) || parseIso(DEF_ANCHOR);
     if (!d) return { week: 'A', idx: 0 };
+    if (isoOf(d) === '2026-11-01' && S.anchor === '2026-11-02') return { week: 'A', idx: 6 }; // one-day override: plan reset day (Sun Nov 1) is Week A Sunday
     const n = (((Math.round((d - a) / 86400000)) % 14) + 14) % 14;
     return { week: n < 7 ? 'A' : 'B', idx: n % 7 };
   };
